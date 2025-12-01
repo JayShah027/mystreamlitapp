@@ -13,8 +13,8 @@ st.set_page_config(page_title="Image Classifier (Streamlit Cloud)")
 
 # CONFIG: use env var or Streamlit secret for the Drive ID / direct download url
 # For security, add MODEL_GDRIVE_ID to Streamlit Cloud Secrets (recommended).
-GDRIVE_FILE_ID = os.environ.get("MODEL_GDRIVE_ID", "")  # or "1AbCdEf..."  # <--- optional fallback
-MODEL_DIR = Path("models/final_saved_model")
+GDRIVE_FILE_ID = os.environ.get("1T-xoiVZgyrAXaUo0-n4P5dRAt3UNf2-z", "")  # or "1AbCdEf..."  # <--- optional fallback
+MODEL_DIR = Path("models/final_saved_model.keras")
 LABELS_PATH = Path("models/labels.json")
 
 @st.cache_resource
